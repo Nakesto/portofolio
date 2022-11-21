@@ -1,11 +1,11 @@
-import Navbar from './Navbar'
+import { AnimatePresence } from "framer-motion";
+import Navbar from "./Navbar";
 
 export default function Layout({ children }) {
-
-    return (
-        <>
-            <Navbar />
-            {children}
-        </>
-    )
+  return (
+    <>
+      <Navbar />
+      <AnimatePresence>{children}</AnimatePresence>
+    </>
+  );
 }
