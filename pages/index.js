@@ -22,6 +22,7 @@ import { loadFull } from "tsparticles";
 import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
 import Footer from "../components/Footer";
+import { FlexMotion } from "../animation/motion";
 
 export default function Home() {
   const { colorMode } = useColorMode();
@@ -134,7 +135,7 @@ export default function Home() {
           <Footer colorMode={colorMode} />
         </VStack>
       </Container>
-      <Flex
+      <FlexMotion
         position="fixed"
         width="50px"
         bottom="0"
@@ -146,6 +147,13 @@ export default function Home() {
         direction="column"
         justifyContent="center"
         alignItems="center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.9,
+        }}
+        exit={{ opacity: 0 }}
         zIndex="10"
       >
         <Link href="https://www.instagram.com/vinboy_huang">
@@ -163,8 +171,8 @@ export default function Home() {
           height="75px"
           mt="25px"
         />
-      </Flex>
-      <Flex
+      </FlexMotion>
+      <FlexMotion
         position="fixed"
         width="50px"
         bottom="0"
@@ -176,6 +184,13 @@ export default function Home() {
         direction="column"
         justifyContent="center"
         alignItems="center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          delay: 0.9,
+        }}
+        exit={{ opacity: 0 }}
       >
         <Text
           style={{ textOrientation: "mixed", writingMode: "vertical-rl" }}
@@ -189,7 +204,7 @@ export default function Home() {
           height="75px"
           mt="25px"
         />
-      </Flex>
+      </FlexMotion>
     </>
   );
 }

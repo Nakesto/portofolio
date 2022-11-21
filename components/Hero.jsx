@@ -7,7 +7,6 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import React from "react";
 import { FlexMotion } from "../animation/motion";
 
