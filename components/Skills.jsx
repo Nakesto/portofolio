@@ -32,7 +32,10 @@ const Skills = ({ colorMode }) => {
       </Flex>
 
       <Flex
-        h="190px"
+        h={{
+          xsm: "230px",
+          sm: "190px",
+        }}
         direction="column"
         gap="5px"
         style={{

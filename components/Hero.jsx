@@ -12,9 +12,10 @@ import React from "react";
 import { FlexMotion } from "../animation/motion";
 
 function Hero({ colorMode }) {
+  console.log(window.innerHeight);
   return (
     <FlexMotion
-      h="100vh"
+      h={window.innerHeight >= 600 ? "100vh" : "fit-content"}
       alignItems="center"
       w="100%"
       initial={{ opacity: 0 }}
@@ -23,14 +24,13 @@ function Hero({ colorMode }) {
         duration: 0.8,
         delay: 0.6,
       }}
-      exit={{ opacity: 0 }}
     >
       <Flex
         w="100%"
         alignItems="center"
         paddingTop={{
-          xsm: "100px",
-          lg: "0",
+          xsm: window.innerHeight >= 600 ? "100px" : "125px",
+          lg: window.innerHeight >= 600 ? "0" : "150px",
         }}
         paddingLeft={{
           xsm: "15px",

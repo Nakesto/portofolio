@@ -60,7 +60,10 @@ const About = ({ colorMode }) => {
       </TextMotion>
       <FlexMotion
         w="100%"
-        h="400px"
+        h={{
+          xsm: "500px",
+          sm: "400px",
+        }}
         alignItems="center"
         justifyContent={{
           xsm: "start",
@@ -270,12 +273,13 @@ const About = ({ colorMode }) => {
             xl: "fit-content",
           }}
           mt={{
-            xsm: "20px",
+            xsm: "25px",
             sm: 0,
           }}
           flex="1"
           h="100%"
           justifyContent="start"
+          bg="blue"
         >
           {tabs.education && <Education colorMode={colorMode} />}
           {tabs.skills && <Skills colorMode={colorMode} />}

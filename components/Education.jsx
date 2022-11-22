@@ -6,6 +6,7 @@ import { BoxMotion } from "../animation/motion";
 const Education = ({ colorMode }) => {
   return (
     <BoxMotion
+      width="100%"
       direction="column"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -13,16 +14,17 @@ const Education = ({ colorMode }) => {
         duration: 0.8,
       }}
       exit={{ opacity: 0 }}
+      h="100%"
     >
       <Text
         fontSize="4xl"
         fontWeight="semibold"
-        color={colorMode === "dark" ? "white" : "black"}
+        color={colorMode === "dark" ? "white" : "dark"}
         mb="30px"
       >
         Education
       </Text>
-      <Flex direction="column" gap="10px">
+      <Flex direction="column">
         <Flex>
           <Icon
             as={BiRightArrow}
@@ -35,9 +37,10 @@ const Education = ({ colorMode }) => {
           <Text
             fontSize="xl"
             fontWeight="medium"
-            color={colorMode === "dark" ? "white" : "black"}
+            color={colorMode === "dark" ? "white" : "dark"}
+            mb="10px"
           >
-            <strong style={{ color: "#7D869C" }}>2014-2017</strong>
+            <strong style={{ color: "#7D869C" }}>2014 - 2017</strong>
             &nbsp;&nbsp;&nbsp;&nbsp;SMP Xaverius Maria Palembang
           </Text>
         </Flex>
@@ -53,10 +56,11 @@ const Education = ({ colorMode }) => {
           <Text
             fontSize="xl"
             fontWeight="medium"
-            color={colorMode === "dark" ? "white" : "black"}
+            color={colorMode === "dark" ? "white" : "dark"}
+            mb="10px"
           >
             <strong style={{ color: "#7D869C" }}>2017-2020</strong>
-            &nbsp;&nbsp;&nbsp;SMA Xaverius 1 Palembang
+            &nbsp;&nbsp;&nbsp;&nbsp;SMA Xaverius 1 Palembang
           </Text>
         </Flex>
         <Flex>
@@ -71,7 +75,7 @@ const Education = ({ colorMode }) => {
           <Text
             fontSize="xl"
             fontWeight="medium"
-            color={colorMode === "dark" ? "white" : "black"}
+            color={colorMode === "dark" ? "white" : "dark"}
           >
             <strong style={{ color: "#7D869C" }}>2020 to present</strong>
             &nbsp;&nbsp;&nbsp;&nbsp;Universitas Multimedia Nusantara
