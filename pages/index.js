@@ -65,7 +65,10 @@ export default function Home() {
               off of his own product called Join. He want to complete the
               product as soon as possible."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href={colorMode === "dark" ? "/Dark.png" : "/Light.png"}
+        />
       </Head>
 
       <Container
