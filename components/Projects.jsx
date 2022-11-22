@@ -16,7 +16,7 @@ import CardProject from "./CardProject";
 import { AiOutlineFolder } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
-import { FlexMotion, GridMotion, HeadingMotion } from "../animation/motion";
+import { GridMotion, HeadingMotion } from "../animation/motion";
 
 const Projects = ({ colorMode }) => {
   return (
