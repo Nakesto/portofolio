@@ -20,7 +20,7 @@ const CardProject = ({ colorMode }) => {
         }}
       >
         <Image
-          src="Timur.png"
+          src="Timur.jpg"
           alt="Timur"
           w={{
             xsm: 0,
@@ -42,7 +42,7 @@ const CardProject = ({ colorMode }) => {
             lg: "-75px",
           }}
           background={{
-            xsm: "url(Timur.png)",
+            xsm: "url(Timur.jpg)",
             md: "unset",
           }}
           backgroundSize="cover"
@@ -141,7 +141,7 @@ const CardProject = ({ colorMode }) => {
         }}
       >
         <Image
-          src="Kofika.png"
+          src="Kofika.jpg"
           alt="Kofika"
           w={{
             xsm: 0,
@@ -163,7 +163,7 @@ const CardProject = ({ colorMode }) => {
             lg: "-75px",
           }}
           background={{
-            xsm: "url(Kofika.png)",
+            xsm: "url(Kofika.jpg)",
             md: "unset",
           }}
           backgroundSize="cover"

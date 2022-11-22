@@ -68,7 +68,7 @@ function Hero({ colorMode }) {
               lg: "2xl",
             }}
             name="Vincent Gunawan"
-            src="Me.png"
+            src="Me.jpg"
             mr={{
               xsm: "0",
               sm: "50px",
