@@ -208,7 +208,7 @@ const CardProject = ({ colorMode }) => {
             >
               A web app for E-commerce project named Join. This project has
               FrontEnd and BackEnd. FrontEnd using react and Backend using
-              Laravel. I'm managing all system of this application.
+              Laravel. I&apos;m managing all system of this application.
             </Text>
           </Flex>
           <Flex
