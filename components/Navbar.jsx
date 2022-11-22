@@ -2,7 +2,12 @@ import {
   Button,
   Container,
   Flex,
+  IconButton,
   Link,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
   Spacer,
   Text,
   useColorMode,
@@ -124,7 +129,45 @@ function Navbar() {
                 </Text>
               </Button>
             </Link>
-            <Flex
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                aria-label="Options"
+                icon={<HamburgerIcon mx="15px" />}
+                variant="outline"
+                h={{
+                  xsm: "fit-content",
+                  sm: "100%",
+                }}
+                borderRadius="lg"
+                borderWidth="2px"
+                borderColor="tertiary"
+                px={{
+                  xsm: "0",
+                  sm: "18px",
+                }}
+                py={{
+                  xsm: "15px",
+                  sm: "0",
+                }}
+                display={{
+                  md: "none",
+                }}
+              />
+              <MenuList>
+                <MenuItem
+                  color={colorMode === "dark" ? "primary" : "quaternary"}
+                >
+                  Projects
+                </MenuItem>
+                <MenuItem
+                  color={colorMode === "dark" ? "primary" : "quaternary"}
+                >
+                  Contact
+                </MenuItem>
+              </MenuList>
+            </Menu>
+            {/* <Flex
               justifyContent="center"
               bg="transparent"
               alignItems="center"
@@ -155,7 +198,7 @@ function Navbar() {
                   sm: "20px",
                 }}
               />
-            </Flex>
+            </Flex> */}
             <Button
               bg="transparent"
               h="100%"

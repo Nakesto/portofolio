@@ -1,10 +1,13 @@
 import "../styles/globals.css";
-import { ChakraProvider, useColorMode } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import { extendTheme } from "@chakra-ui/react";
 import { mode } from "@chakra-ui/theme-tools";
-import { useEffect } from "react";
 import Layout from "../components/Layout";
 import "@fontsource/quicksand";
+
+const config = {
+  initialColorMode: "dark",
+};
 
 const theme = extendTheme({
   styles: {
@@ -14,6 +17,7 @@ const theme = extendTheme({
       },
     }),
   },
+  config,
   colors: {
     primary: "#C7EFCF",
     secondary: "#FE5F55",
@@ -37,26 +41,12 @@ const theme = extendTheme({
   },
 });
 
-function ForceDarkMode({ children }) {
-  const { colorMode, toggleColorMode } = useColorMode();
-
-  useEffect(() => {
-    if (colorMode === "dark") return;
-    toggleColorMode();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  return children;
-}
-
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <ForceDarkMode>
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </ForceDarkMode>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ChakraProvider>
   );
 }

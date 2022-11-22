@@ -55,7 +55,16 @@ export default function Home() {
       <Head>
         <title>Vincent | Portofolio</title>
         <meta name="title" content="Vincent's Portofolio" />
-        <meta name="description" content="Hi" />
+        <meta
+          name="description"
+          content="Vincent is a freelance and a full-stack web developer based in
+              Tangerang with a passion for building website application he
+              wants. He has a knack for all things, from planning and designing
+              all the way to solving real-life problems with code. When not
+              coding, he loves to playing basketball. Currently, he is living
+              off of his own product called Join. He want to complete the
+              product as soon as possible."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

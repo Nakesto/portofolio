@@ -5,6 +5,7 @@ import {
   Divider,
   Flex,
   Image,
+  Link,
   Text,
 } from "@chakra-ui/react";
 import React from "react";
@@ -167,22 +168,29 @@ function Hero({ colorMode }) {
                 sm: "block",
               }}
             >
-              Vincent is a freelance and a full-stack developer based in Osaka
-              with a passion for building digital services/stuff he wants. He
-              has a knack for all things launching products, from planning and
-              designing all the way to solving real-life problems with code.
-              When not online, he loves hanging out with his camera. Currently,
-              he is living off of his own product called Inkdrop. He publishes
-              content for marketing his products and his YouTube channel called
-              &quot;Dev as Life&quot; has more than 100k subscribers.
+              Vincent is a freelance and a full-stack web developer based in
+              Tangerang with a passion for building website application he
+              wants. He has a knack for all things, from planning and designing
+              all the way to solving real-life problems with code. When not
+              coding, he loves to playing basketball. Currently, he is living
+              off of his own product called Join. He want to complete the
+              product as soon as possible.
             </Text>
-            <Button
-              bg={colorMode === "dark" ? "primary" : "quaternary"}
-              color="black"
-              size="lg"
+            <Link
+              href="CV_VincentGunawan.pdf"
+              download="CV_VincentGunawan"
+              style={{
+                textDecoration: "none",
+              }}
             >
-              My Resume
-            </Button>
+              <Button
+                bg={colorMode === "dark" ? "primary" : "quaternary"}
+                color="black"
+                size="lg"
+              >
+                My Resume
+              </Button>
+            </Link>
           </Flex>
           <Box
             w={{

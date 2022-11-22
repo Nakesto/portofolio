@@ -133,7 +133,6 @@ const Projects = ({ colorMode }) => {
                 h="40px"
               />
               <Flex gap="20px">
-                <Icon as={AiOutlineGithub} w="25px" h="25px" />
                 <Link href="https://beritakuuuu.000webhostapp.com/">
                   <Icon as={FiExternalLink} w="25px" h="25px" />
                 </Link>
