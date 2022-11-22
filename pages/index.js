@@ -151,7 +151,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{
           duration: 0.8,
-          delay: 0.9,
+          delay: 1.2,
         }}
         exit={{ opacity: 0 }}
         zIndex="10"
@@ -188,7 +188,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{
           duration: 0.8,
-          delay: 0.9,
+          delay: 1.2,
         }}
         exit={{ opacity: 0 }}
       >

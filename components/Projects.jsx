@@ -98,12 +98,14 @@ const Projects = ({ colorMode }) => {
                 h="40px"
               />
               <Flex gap="20px">
-                <Icon
-                  as={AiOutlineGithub}
-                  w="25px"
-                  h="25px"
-                  color={colorMode === "dark" ? "white" : "black"}
-                />
+                <Link href="https://github.com/Nakesto/UAS2021">
+                  <Icon
+                    as={AiOutlineGithub}
+                    w="25px"
+                    h="25px"
+                    color={colorMode === "dark" ? "white" : "black"}
+                  />
+                </Link>
                 <Link href="https://hoteltransylvania30.000webhostapp.com/">
                   <Icon as={FiExternalLink} w="25px" h="25px" />
                 </Link>
@@ -112,11 +114,7 @@ const Projects = ({ colorMode }) => {
           </CardHeader>
           <CardBody>
             <Heading mb="20px">Hotel Transylvania</Heading>
-            <Text>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-              repellendus facilis accusamus quas sunt odio soluta quo
-              praesentium culpa earum?
-            </Text>
+            <Text>Hotel Application with login and booking room featuture</Text>
           </CardBody>
           <CardFooter gap="20px">
             <Text>PHP</Text>
@@ -144,9 +142,8 @@ const Projects = ({ colorMode }) => {
           <CardBody>
             <Heading mb="20px">Beritaku</Heading>
             <Text>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-              repellendus facilis accusamus quas sunt odio soluta quo
-              praesentium culpa earum?
+              News Web Apllicatio named Beritaku. Beritaku have some category
+              news such as sport, economy and lifestyle
             </Text>
           </CardBody>
           <CardFooter gap="20px">
@@ -164,7 +161,9 @@ const Projects = ({ colorMode }) => {
                 h="40px"
               />
               <Flex gap="20px">
-                <Icon as={AiOutlineGithub} w="25px" h="25px" />
+                <Link href="https://github.com/Nakesto/Moda---Cross">
+                  <Icon as={AiOutlineGithub} w="25px" h="25px" />
+                </Link>
                 <Icon as={FiExternalLink} w="25px" h="25px" />
               </Flex>
             </Flex>
@@ -172,15 +171,51 @@ const Projects = ({ colorMode }) => {
           <CardBody>
             <Heading mb="20px">Moda</Heading>
             <Text>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
-              repellendus facilis accusamus quas sunt odio soluta quo
-              praesentium culpa earum?
+              Thrifting cross-platform app named Moda. This app looks like
+              E-commerce, then have some features like cart, chat, and admin
             </Text>
           </CardBody>
           <CardFooter gap="20px">
             <Text>Ionic</Text>
             <Text>React</Text>
             <Text>Firebase</Text>
+          </CardFooter>
+        </Card>
+        <Card bg={colorMode === "dark" ? "semiblack" : "gray"}>
+          <CardHeader>
+            <Flex justifyContent="space-between">
+              <Icon
+                color={colorMode === "dark" ? "primary" : "quaternary"}
+                as={AiOutlineFolder}
+                w="40px"
+                h="40px"
+              />
+              <Flex gap="20px">
+                <Link href="https://github.com/Nakesto/UAS-PTI2021">
+                  <Icon
+                    as={AiOutlineGithub}
+                    w="25px"
+                    h="25px"
+                    color={colorMode === "dark" ? "white" : "black"}
+                  />
+                </Link>
+                <Link href="https://nakesto.github.io/UAS-PTI2021/">
+                  <Icon as={FiExternalLink} w="25px" h="25px" />
+                </Link>
+              </Flex>
+            </Flex>
+          </CardHeader>
+          <CardBody>
+            <Heading mb="20px">Delicioso</Heading>
+            <Text>
+              Chat Bot Web Application name delicioso. This web use twitter bot
+              to interact directly with user.
+            </Text>
+          </CardBody>
+          <CardFooter gap="20px">
+            <Text>Angular</Text>
+            <Text>Twitter Bot</Text>
+            <Text>Bootstrap</Text>
           </CardFooter>
         </Card>
       </GridMotion>
