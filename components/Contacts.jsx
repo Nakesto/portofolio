@@ -36,6 +36,7 @@ const Contacts = ({ colorMode }) => {
         transition={{
           duration: 1,
         }}
+        textAlign="center"
       >
         <Highlight
           query="03."

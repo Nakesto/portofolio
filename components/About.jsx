@@ -279,7 +279,6 @@ const About = ({ colorMode }) => {
           flex="1"
           h="100%"
           justifyContent="start"
-          bg="blue"
         >
           {tabs.education && <Education colorMode={colorMode} />}
           {tabs.skills && <Skills colorMode={colorMode} />}

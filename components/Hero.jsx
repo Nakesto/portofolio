@@ -8,14 +8,23 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import { FlexMotion } from "../animation/motion";
 
 function Hero({ colorMode }) {
-  console.log(window.innerHeight);
+  const [[width, height], setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
   return (
     <FlexMotion
-      h={window.innerHeight >= 600 ? "100vh" : "fit-content"}
+      h={height > 600 ? "100vh" : "fit-content"}
       alignItems="center"
       w="100%"
       initial={{ opacity: 0 }}
@@ -28,9 +37,10 @@ function Hero({ colorMode }) {
       <Flex
         w="100%"
         alignItems="center"
+        h={height > 600 ? "fit-content" : "100%"}
         paddingTop={{
-          xsm: window.innerHeight >= 600 ? "100px" : "125px",
-          lg: window.innerHeight >= 600 ? "0" : "150px",
+          xsm: height > 600 ? "100px" : "125px",
+          lg: height > 600 ? "0" : "125px",
         }}
         paddingLeft={{
           xsm: "15px",

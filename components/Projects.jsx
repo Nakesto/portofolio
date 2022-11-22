@@ -50,6 +50,7 @@ const Projects = ({ colorMode }) => {
         transition={{
           duration: 1,
         }}
+        textAlign="center"
       >
         <Highlight
           query="02."
@@ -71,6 +72,7 @@ const Projects = ({ colorMode }) => {
         transition={{
           duration: 1,
         }}
+        textAlign="center"
       >
         Other Projects
       </HeadingMotion>
