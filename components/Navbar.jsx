@@ -133,7 +133,14 @@ function Navbar() {
               <MenuButton
                 as={IconButton}
                 aria-label="Options"
-                icon={<HamburgerIcon mx="15px" />}
+                icon={
+                  <HamburgerIcon
+                    mx={{
+                      xsm: "15px",
+                      sm: "0",
+                    }}
+                  />
+                }
                 variant="outline"
                 h={{
                   xsm: "fit-content",
@@ -167,38 +174,6 @@ function Navbar() {
                 </MenuItem>
               </MenuList>
             </Menu>
-            {/* <Flex
-              justifyContent="center"
-              bg="transparent"
-              alignItems="center"
-              h={{
-                xsm: "fit-content",
-                sm: "100%",
-              }}
-              borderRadius="lg"
-              borderWidth="2px"
-              borderColor="tertiary"
-              px={{
-                xsm: "15px",
-                sm: "18px",
-              }}
-              py={{
-                xsm: "15px",
-                sm: "0",
-              }}
-              display={{
-                xsm: "flex",
-                md: "none",
-              }}
-            >
-              <HamburgerIcon
-                color={colorMode === "dark" ? "white" : "black"}
-                fontSize={{
-                  xsm: "15px",
-                  sm: "20px",
-                }}
-              />
-            </Flex> */}
             <Button
               bg="transparent"
               h="100%"
