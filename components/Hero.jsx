@@ -182,9 +182,9 @@ function Hero({ colorMode }) {
               Tangerang with a passion for building website application he
               wants. He has a knack for all things, from planning and designing
               all the way to solving real-life problems with code. When not
-              coding, he loves to playing basketball. Currently, he is living
-              off of his own product called Join. He want to complete the
-              product as soon as possible.
+              coding, he loves to playing basketball. Currently, he is making
+              his own product called Join. He want to complete the product as
+              soon as possible.
             </Text>
             <Link
               href="CV_VincentGunawan.pdf"
