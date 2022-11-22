@@ -2,20 +2,18 @@ import {
   Button,
   Container,
   Flex,
-  IconButton,
+  Icon,
   Link,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
   Spacer,
   Text,
   useColorMode,
 } from "@chakra-ui/react";
 import React from "react";
-import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { useEffect } from "react";
 import { BoxMotion } from "../animation/motion";
+import { MdWorkOutline } from "react-icons/md";
+import { AiOutlineContacts } from "react-icons/ai";
 
 function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -97,83 +95,65 @@ function Navbar() {
               <Button
                 bg="transparent"
                 h="100%"
-                display={{
-                  xsm: "none",
-                  md: "block",
-                }}
                 color={colorMode == "light" ? "black" : "white"}
                 _hover={{ bg: "transparent", textDecoration: "none" }}
                 _active={{ bg: "transparent" }}
                 _focus={{ border: "transparent" }}
               >
-                <Text fontSize="lg" fontWeight="medium" letterSpacing={1}>
+                <Text
+                  display={{
+                    xsm: "none",
+                    md: "block",
+                  }}
+                  fontSize="lg"
+                  fontWeight="medium"
+                  letterSpacing={1}
+                >
                   Projects
                 </Text>
+                <Icon
+                  as={MdWorkOutline}
+                  display={{
+                    xsm: "block",
+                    md: "none",
+                  }}
+                  w="25px"
+                  h="25px"
+                />
               </Button>
             </Link>
             <Link href="#contact" style={{ textDecoration: "none" }}>
               <Button
                 bg="transparent"
                 h="100%"
-                display={{
-                  xsm: "none",
-                  md: "block",
-                }}
                 color={colorMode == "light" ? "black" : "white"}
                 _hover={{ bg: "transparent" }}
                 _active={{ bg: "transparent" }}
                 _focus={{ border: "transparent" }}
               >
-                <Text fontSize="lg" fontWeight="medium" letterSpacing={1}>
+                <Text
+                  display={{
+                    xsm: "none",
+                    md: "block",
+                  }}
+                  fontSize="lg"
+                  fontWeight="medium"
+                  letterSpacing={1}
+                >
                   Contact
                 </Text>
+                <Icon
+                  as={AiOutlineContacts}
+                  display={{
+                    xsm: "block",
+                    md: "none",
+                  }}
+                  w="25px"
+                  h="25px"
+                />
               </Button>
             </Link>
-            <Menu>
-              <MenuButton
-                as={IconButton}
-                aria-label="Options"
-                icon={
-                  <HamburgerIcon
-                    mx={{
-                      xsm: "15px",
-                      sm: "0",
-                    }}
-                  />
-                }
-                variant="outline"
-                h={{
-                  xsm: "fit-content",
-                  sm: "100%",
-                }}
-                borderRadius="lg"
-                borderWidth="2px"
-                borderColor="tertiary"
-                px={{
-                  xsm: "0",
-                  sm: "18px",
-                }}
-                py={{
-                  xsm: "15px",
-                  sm: "0",
-                }}
-                display={{
-                  md: "none",
-                }}
-              />
-              <MenuList>
-                <MenuItem
-                  color={colorMode === "dark" ? "primary" : "quaternary"}
-                >
-                  Projects
-                </MenuItem>
-                <MenuItem
-                  color={colorMode === "dark" ? "primary" : "quaternary"}
-                >
-                  Contact
-                </MenuItem>
-              </MenuList>
-            </Menu>
+
             <Button
               bg="transparent"
               h="100%"
