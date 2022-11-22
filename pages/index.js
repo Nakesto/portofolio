@@ -1,7 +1,6 @@
 import {
   Box,
   Container,
-  Flex,
   Icon,
   Link,
   Text,
@@ -9,8 +8,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Head from "next/head";
-import About from "../components/About";
-import Hero from "../components/Hero";
 import {
   AiOutlineLinkedin,
   AiOutlineGithub,
@@ -19,10 +16,28 @@ import {
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import Projects from "../components/Projects";
-import Contacts from "../components/Contacts";
-import Footer from "../components/Footer";
 import { FlexMotion } from "../animation/motion";
+import dynamic from "next/dynamic";
+
+const Hero = dynamic(() => import("../components/Hero"), {
+  ssr: false,
+});
+
+const About = dynamic(() => import("../components/About"), {
+  ssr: false,
+});
+
+const Projects = dynamic(() => import("../components/Projects"), {
+  ssr: false,
+});
+
+const Contacts = dynamic(() => import("../components/Contacts"), {
+  ssr: false,
+});
+
+const Footer = dynamic(() => import("../components/Footer"), {
+  ssr: false,
+});
 
 export default function Home() {
   const { colorMode } = useColorMode();

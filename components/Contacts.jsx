@@ -1,11 +1,4 @@
-import {
-  Button,
-  Flex,
-  Heading,
-  Highlight,
-  Input,
-  Text,
-} from "@chakra-ui/react";
+import { Button, Flex, Highlight } from "@chakra-ui/react";
 import React from "react";
 import { HeadingMotion, TextMotion } from "../animation/motion";
 

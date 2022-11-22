@@ -4,19 +4,20 @@ import {
   CardFooter,
   CardHeader,
   Flex,
-  Grid,
   Heading,
   Highlight,
   Icon,
   Link,
   Text,
 } from "@chakra-ui/react";
+import dynamic from "next/dynamic";
 import React from "react";
-import CardProject from "./CardProject";
 import { AiOutlineFolder } from "react-icons/ai";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import { GridMotion, HeadingMotion } from "../animation/motion";
+
+const CardProject = dynamic(() => import("../components/CardProject"));
 
 const Projects = ({ colorMode }) => {
   return (

@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   Container,
   Flex,
@@ -7,7 +6,6 @@ import {
   Spacer,
   Text,
   useColorMode,
-  VStack,
 } from "@chakra-ui/react";
 import React from "react";
 import { HamburgerIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";

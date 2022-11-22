@@ -1,4 +1,4 @@
-import { Box, Flex, Icon, Text } from "@chakra-ui/react";
+import { Flex, Icon, Text } from "@chakra-ui/react";
 import React from "react";
 import { BiRightArrow } from "react-icons/bi";
 import { BoxMotion } from "../animation/motion";

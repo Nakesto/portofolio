@@ -1,4 +1,4 @@
-import { Flex, Icon, Image, Link, Text, VStack } from "@chakra-ui/react";
+import { Flex, Icon, Image, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";

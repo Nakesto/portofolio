@@ -1,4 +1,4 @@
-import { Box, Flex, Stack, Text, Highlight } from "@chakra-ui/react";
+import { Flex, Stack, Text, Highlight } from "@chakra-ui/react";
 import React from "react";
 import { useState } from "react";
 import { FlexMotion, TextMotion } from "../animation/motion";
