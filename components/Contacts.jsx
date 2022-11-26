@@ -5,7 +5,7 @@ import { HeadingMotion, TextMotion } from "../animation/motion";
 const Contacts = ({ colorMode }) => {
   const mailto = (e) => {
     window.location.href =
-      "mailto:vinboyhuang88@gmail.com?subject=Response&body=Hi, How Are You?";
+      "mailto:vincent.gunawan02@gmail.com?subject=Response&body=Hi, How Are You?";
     e.preventDefault();
   };
 

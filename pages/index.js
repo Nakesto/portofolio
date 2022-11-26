@@ -223,7 +223,7 @@ export default function Home() {
           style={{ textOrientation: "mixed", writingMode: "vertical-rl" }}
           letterSpacing={2}
         >
-          vinboyhunag88@gmail.com
+          vincent.gunawan02@gmail.com
         </Text>
         <Box
           width="0.5px"
