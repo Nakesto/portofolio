@@ -1,4 +1,4 @@
-import { Flex, Icon, Image, Link, Text } from "@chakra-ui/react";
+import { Flex, Icon, Image, Link, Text, Wrap } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
@@ -141,7 +141,7 @@ const CardProject = ({ colorMode }) => {
       >
         <Image
           src="Join.jpg"
-          alt="Kofika"
+          alt="Join App"
           w={{
             xsm: 0,
             md: "50%",
@@ -165,6 +165,7 @@ const CardProject = ({ colorMode }) => {
             xsm: "url(Join.jpg)",
             md: "unset",
           }}
+          zIndex="10"
           backgroundSize="cover"
           boxShadow={{
             xsm:
@@ -261,7 +262,7 @@ const CardProject = ({ colorMode }) => {
         w="100%"
         justifyContent="center"
         alignItems="center"
-        marginBottom="40px"
+        marginBottom="75px"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{
@@ -385,6 +386,180 @@ const CardProject = ({ colorMode }) => {
               />
             </Link>
           </Flex>
+        </Flex>
+      </FlexMotion>
+      <FlexMotion
+        w="100%"
+        justifyContent="center"
+        alignItems="center"
+        marginBottom="40px"
+        direction="row-reverse"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{
+          duration: 1,
+        }}
+      >
+        <Image
+          src="CloneWhatsapp.png"
+          alt="Clone WA"
+          w={{
+            xsm: 0,
+            md: "50%",
+          }}
+        />
+        <Flex
+          direction="column"
+          flex="1"
+          alignItems="start"
+          padding={{
+            xsm: "20px",
+            sm: "30px",
+            md: "0",
+          }}
+          marginRight={{
+            xsm: "0",
+            md: "-100px",
+            lg: "-75px",
+          }}
+          background={{
+            xsm: "url(Join.jpg)",
+            md: "unset",
+          }}
+          zIndex="10"
+          backgroundSize="cover"
+          boxShadow={{
+            xsm:
+              colorMode === "dark"
+                ? "inset 0 0 0 2000px rgba(27, 38, 44, 0.95)"
+                : "inset 0 0 0 2000px rgba(248, 249, 250, 0.95)",
+            md: "none",
+          }}
+        >
+          <Text
+            color={colorMode === "dark" ? "primary" : "quaternary"}
+            fontWeight="medium"
+          >
+            Complete Project
+          </Text>
+          <Text
+            fontSize="2xl"
+            fontWeight="bold"
+            color={colorMode === "dark" ? "white" : "black"}
+          >
+            Clone Whatsapp
+          </Text>
+          <Flex
+            marginTop="20px"
+            w="100%"
+            justifyContent="center"
+            alignItems="center"
+            padding={{
+              xsm: "0",
+              md: "35px",
+            }}
+            bg={{
+              sm: "none",
+              md: colorMode === "dark" ? "primary" : "quaternary",
+            }}
+          >
+            <Text
+              textAlign="left"
+              fontWeight="bold"
+              color={colorMode === "dark" ? "tertiary" : "black"}
+            >
+              A cloning whatsapp web app with custom features. This application
+              web is full stack development. This using backend API in Go
+              Programming Languange.
+            </Text>
+          </Flex>
+          <Wrap
+            color="white"
+            paddingTop="15px"
+            paddingBottom="15px"
+            spacing="15px"
+          >
+            <Text
+              fontWeight="extrabold"
+              color={colorMode === "dark" ? "white" : "black"}
+            >
+              Vue.js
+            </Text>
+            <Text
+              fontWeight="extrabold"
+              color={colorMode === "dark" ? "white" : "black"}
+            >
+              Quasar
+            </Text>
+            <Text
+              fontWeight="extrabold"
+              color={colorMode === "dark" ? "white" : "black"}
+            >
+              Gin Gonic (Golang)
+            </Text>
+            <Text
+              fontWeight="extrabold"
+              color={colorMode === "dark" ? "white" : "black"}
+            >
+              PostgreSQL
+            </Text>
+          </Wrap>
+          <Wrap spacing="20px">
+            <Link
+              href="https://clone-whatsapp.onrender.com"
+              style={{ textDecoration: "none" }}
+            >
+              <Flex direction="row" color="white" gap="10px">
+                <Icon
+                  as={FiExternalLink}
+                  w="25px"
+                  h="25px"
+                  color={colorMode === "dark" ? "white" : "black"}
+                />
+
+                <Text
+                  fontWeight="extrabold"
+                  color={colorMode === "dark" ? "white" : "black"}
+                >
+                  FrontEnd
+                </Text>
+              </Flex>
+            </Link>
+            <Link
+              href="https://golang-chat-api.onrender.com"
+              style={{ textDecoration: "none" }}
+            >
+              <Flex direction="row" color="white" gap="10px">
+                <Icon
+                  as={FiExternalLink}
+                  w="25px"
+                  h="25px"
+                  color={colorMode === "dark" ? "white" : "black"}
+                />
+
+                <Text
+                  fontWeight="extrabold"
+                  color={colorMode === "dark" ? "white" : "black"}
+                  style={{
+                    textDecoration: "none",
+                  }}
+                >
+                  BackEnd
+                </Text>
+              </Flex>
+            </Link>
+            <Link
+              href="https://github.com/Nakesto/vue-clone-whatsapp"
+              style={{ textDecoration: "none" }}
+            >
+              <Icon
+                as={AiOutlineGithub}
+                w="25px"
+                h="25px"
+                color={colorMode === "dark" ? "white" : "black"}
+              />
+            </Link>
+          </Wrap>
         </Flex>
       </FlexMotion>
     </>

@@ -166,7 +166,9 @@ const Projects = ({ colorMode }) => {
                 <Link href="https://github.com/Nakesto/Moda---Cross">
                   <Icon as={AiOutlineGithub} w="25px" h="25px" />
                 </Link>
-                <Icon as={FiExternalLink} w="25px" h="25px" />
+                <Link href="https://web-moda.vercel.app">
+                  <Icon as={FiExternalLink} w="25px" h="25px" />
+                </Link>
               </Flex>
             </Flex>
           </CardHeader>

@@ -54,6 +54,7 @@ export default function Home() {
     <>
       <Head>
         <title>Vincent | Portofolio</title>
+        <meta name="author" content="Vincent Gunawan" />
         <meta name="title" content="Vincent's Portofolio" />
         <meta
           name="description"
